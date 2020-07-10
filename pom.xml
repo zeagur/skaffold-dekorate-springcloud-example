@@ -36,6 +36,12 @@
             <artifactId>kubernetes-spring-starter</artifactId>
             <version>1.0.1</version>
         </dependency>
+<!--For using with Dekorate Options configuration-->
+<!--        <dependency>-->
+<!--            <groupId>io.dekorate</groupId>-->
+<!--            <artifactId>option-annotations</artifactId>-->
+<!--            <version>1.0.1</version>-->
+<!--        </dependency>-->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
@@ -48,9 +54,9 @@
             <version>2.2.3.RELEASE</version>
         </dependency>
         <dependency>
-        <groupId>com.google.guava</groupId>
-        <artifactId>guava</artifactId>
-        <version>29.0-jre</version>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>29.0-jre</version>
         </dependency>
     </dependencies>
 

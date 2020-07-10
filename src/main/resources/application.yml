@@ -3,10 +3,15 @@ server:
 dekorate:
   kubernetes:
     labels:
-      - sample/app: sample-app
-      - sample/test-label: mock1
+      - key: sample/app
+        value: sample-app
+      - key: sample/test-label.example
+        value: mock1
     replicas: 2
     image-pull-policy: Never
+# custom output path other than target/classes/META-INF/dekorate
+#  options:
+#    output-path: ../../manifests
 management:
   endpoints:
     web:
