@@ -1,0 +1,13 @@
+apiVersion: skaffold/v2alpha2
+kind: Config
+build:
+  artifacts:
+    # Replace this image with your registry name
+    - image: localhost:5000/sample-app
+      jib: {}
+  tagPolicy:
+    gitCommit: {}
+deploy:
+  kubectl:
+    manifests:
+      - target/classes/META-INF/dekorate/*.yml

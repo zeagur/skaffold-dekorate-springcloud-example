@@ -1,0 +1,16 @@
+server:
+  port: 11600
+dekorate:
+  kubernetes:
+    labels:
+      - sample/app: sample-app
+      - sample/test-label: mock1
+    replicas: 2
+    image-pull-policy: Never
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - health
+        - info
